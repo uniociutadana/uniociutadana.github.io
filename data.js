@@ -240,6 +240,11 @@ const UC_DATA = {
     ctaSubtitle: "Escriu-nos per correu electrònic per dir-nos si t'interessaria aquest projecte, si li donaries suport o si tens alguna proposta més per a la ciutat.",
     ctaBtn: "Escriure a uniociutadana@proton.me",
     ctaMailSubject: "Opinió, suport o propostes - Unió Ciutadana Sabadell",
+    downloadEyebrow: "DOCUMENT COMPLET EN PDF",
+    downloadTitle: "Descarrega el Programa Electoral complet",
+    downloadSubtitle: "Llegeix-lo amb calma, imprimeix-lo o comparteix-lo amb els teus veïns i familiars de Sabadell. Disponible en català i en castellà.",
+    downloadBtnCa: "Descarregar en Català (PDF)",
+    downloadBtnEs: "Descarregar en Castellà (PDF)",
     footerTagline: "© 2026 Unió Ciutadana (UC) Sabadell · Projecte ciutadà en fase de consulta (sense registre jurídic)"
   },
 
@@ -478,6 +483,11 @@ const UC_DATA = {
     ctaSubtitle: "Escríbenos por correo electrónico para decirnos si te interesaría este proyecto, si lo apoyarías o si tienes alguna propuesta más para la ciudad.",
     ctaBtn: "Escribir a uniociutadana@proton.me",
     ctaMailSubject: "Opinión, apoyo o propuestas - Unió Ciutadana Sabadell",
+    downloadEyebrow: "DOCUMENTO COMPLETO EN PDF",
+    downloadTitle: "Descarga el Programa Electoral completo",
+    downloadSubtitle: "Léelo con calma, imprímelo o compártelo con tus vecinos y familiares de Sabadell. Disponible en catalán y en castellano.",
+    downloadBtnCa: "Descargar en Catalán (PDF)",
+    downloadBtnEs: "Descargar en Castellano (PDF)",
     footerTagline: "© 2026 Unió Ciutadana (UC) Sabadell · Proyecto ciudadano en fase de consulta (sin registro jurídico)"
   }
 };
