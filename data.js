@@ -1,5 +1,5 @@
 const TALLY_EMBEDS = {
-  ca: "", // Enganxa aquí la URL d'embed del formulari en català quan el tinguis
+  ca: "https://tally.so/embed/aO58Eq?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1",
   es: "https://tally.so/embed/kbeV51?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1"
 };
 
