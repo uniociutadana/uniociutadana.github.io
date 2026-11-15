@@ -242,9 +242,10 @@ const UC_DATA = {
     ctaMailSubject: "Opinió, suport o propostes - Unió Ciutadana Sabadell",
     downloadEyebrow: "DOCUMENT COMPLET EN PDF",
     downloadTitle: "Descarrega el Programa Electoral complet",
-    downloadSubtitle: "Llegeix-lo amb calma, imprimeix-lo o comparteix-lo amb els teus veïns i familiars de Sabadell. Disponible en català i en castellà.",
-    downloadBtnCa: "Descarregar en Català (PDF)",
-    downloadBtnEs: "Descarregar en Castellà (PDF)",
+    downloadSubtitle: "Llegeix-lo amb calma, imprimeix-lo o comparteix-lo amb els teus veïns i familiars de Sabadell.",
+    downloadBtn: "Descarregar Programa Electoral (PDF · Català)",
+    downloadHref: "docs/programa-electoral-uc-sabadell-ca.pdf",
+    downloadFile: "Programa-Electoral-UC-Sabadell-CAT.pdf",
     footerTagline: "© 2026 Unió Ciutadana (UC) Sabadell · Projecte ciutadà en fase de consulta (sense registre jurídic)"
   },
 
@@ -485,9 +486,10 @@ const UC_DATA = {
     ctaMailSubject: "Opinión, apoyo o propuestas - Unió Ciutadana Sabadell",
     downloadEyebrow: "DOCUMENTO COMPLETO EN PDF",
     downloadTitle: "Descarga el Programa Electoral completo",
-    downloadSubtitle: "Léelo con calma, imprímelo o compártelo con tus vecinos y familiares de Sabadell. Disponible en catalán y en castellano.",
-    downloadBtnCa: "Descargar en Catalán (PDF)",
-    downloadBtnEs: "Descargar en Castellano (PDF)",
+    downloadSubtitle: "Léelo con calma, imprímelo o compártelo con tus vecinos y familiares de Sabadell.",
+    downloadBtn: "Descargar Programa Electoral (PDF · Castellano)",
+    downloadHref: "docs/programa-electoral-uc-sabadell-es.pdf",
+    downloadFile: "Programa-Electoral-UC-Sabadell-ES.pdf",
     footerTagline: "© 2026 Unió Ciutadana (UC) Sabadell · Proyecto ciudadano en fase de consulta (sin registro jurídico)"
   }
 };

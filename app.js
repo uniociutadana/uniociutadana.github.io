@@ -41,6 +41,11 @@
     if (ctaEmailBtn && dict.ctaMailSubject) {
       ctaEmailBtn.href = `mailto:uniociutadana@proton.me?subject=${encodeURIComponent(dict.ctaMailSubject)}`;
     }
+    const downloadBtn = document.getElementById("download-pdf-btn");
+    if (downloadBtn && dict.downloadHref) {
+      downloadBtn.href = dict.downloadHref;
+      downloadBtn.setAttribute("download", dict.downloadFile);
+    }
   }
 
   function renderAxes() {
