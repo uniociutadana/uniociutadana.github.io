@@ -187,14 +187,57 @@
       .join("");
   }
 
+  function loadTallyWidget() {
+    const widgetSrc = "https://tally.so/widgets/embed.js";
+    if (typeof Tally !== "undefined") {
+      Tally.loadEmbeds();
+    } else if (!document.querySelector(`script[src="${widgetSrc}"]`)) {
+      const s = document.createElement("script");
+      s.src = widgetSrc;
+      s.onload = () => typeof Tally !== "undefined" && Tally.loadEmbeds();
+      s.onerror = () => {
+        document.querySelectorAll("iframe[data-tally-src]:not([src])").forEach((el) => {
+          el.src = el.dataset.tallySrc;
+        });
+      };
+      document.body.appendChild(s);
+    }
+  }
+
   function renderTallyAction() {
     const container = document.getElementById("tally-action-area");
     if (!container) return;
     const dict = UC_DATA[currentLang];
-    if (typeof TALLY_FORM_URL !== "undefined" && TALLY_FORM_URL.trim() !== "") {
-      container.innerHTML = `<a href="${TALLY_FORM_URL}" target="_blank" rel="noopener noreferrer" class="btn btn-primary">${dict.tallyBtn}</a>`;
+    const embedUrl = typeof TALLY_EMBEDS !== "undefined" ? (TALLY_EMBEDS[currentLang] || "").trim() : "";
+
+    if (embedUrl !== "") {
+      container.innerHTML = `
+        <div class="tally-embed-wrap">
+          <iframe
+            data-tally-src="${embedUrl}"
+            src="${embedUrl}"
+            loading="lazy"
+            width="100%"
+            height="650"
+            frameborder="0"
+            marginheight="0"
+            marginwidth="0"
+            title="${dict.tallyTitle}"
+          ></iframe>
+        </div>
+      `;
+      loadTallyWidget();
     } else {
-      container.innerHTML = `<div class="tally-pending-note">${dict.tallyPending}</div>`;
+      container.innerHTML = `
+        <div class="tally-pending-note">
+          <p>${dict.tallyPending}</p>
+          ${currentLang === "ca" && TALLY_EMBEDS.es ? `<button type="button" class="btn btn-outline tally-switch-btn" id="tally-switch-es">${dict.tallySwitchToEs}</button>` : ""}
+        </div>
+      `;
+      const switchBtn = document.getElementById("tally-switch-es");
+      if (switchBtn) {
+        switchBtn.addEventListener("click", () => setLanguage("es"));
+      }
     }
   }
 

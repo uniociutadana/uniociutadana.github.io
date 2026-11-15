@@ -1,4 +1,7 @@
-const TALLY_FORM_URL = ""; // Enganxa aquí l'enllaç del teu formulari Tally.so (ex: "https://tally.so/r/xxxxxx")
+const TALLY_EMBEDS = {
+  ca: "", // Enganxa aquí la URL d'embed del formulari en català quan el tinguis
+  es: "https://tally.so/embed/kbeV51?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1"
+};
 
 const UC_DATA = {
   ca: {
@@ -226,7 +229,8 @@ const UC_DATA = {
     tallyTitle: "Participa a l'enquesta ciutadana (Tally.so)",
     tallyDesc: "Explica'ns des de quin barri ens llegeixes, quins eixos veus més urgents i què milloraries o afegiries al programa.",
     tallyBtn: "Respondre l'enquesta a Tally.so",
-    tallyPending: "Enquesta en preparació. Mentrestant, envia'ns la teva opinió directament per correu electrònic a uniociutadana@proton.me.",
+    tallyPending: "Estem preparant la versió en català de l'enquesta. Mentrestant, pots enviar-nos la teva opinió en català a uniociutadana@proton.me o respondre la versió en castellà.",
+    tallySwitchToEs: "Veure l'enquesta en castellà",
     contactBadge: "CONTACTE DIRECTE",
     contactTitle: "Escriu-nos per correu electrònic",
     contactDesc: "Si formes part d'una entitat veïnal, tens propostes concretes per al teu barri o vols col·laborar en aquesta fase inicial, escriu-nos a:",
