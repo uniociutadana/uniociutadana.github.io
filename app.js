@@ -37,6 +37,10 @@
         el.textContent = dict[key];
       }
     });
+    const ctaEmailBtn = document.getElementById("cta-email-btn");
+    if (ctaEmailBtn && dict.ctaMailSubject) {
+      ctaEmailBtn.href = `mailto:uniociutadana@proton.me?subject=${encodeURIComponent(dict.ctaMailSubject)}`;
+    }
   }
 
   function renderAxes() {

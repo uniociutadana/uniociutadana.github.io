@@ -236,9 +236,11 @@ const UC_DATA = {
     contactDesc: "Si formes part d'una entitat veïnal, tens propostes concretes per al teu barri o vols col·laborar en aquesta fase inicial, escriu-nos a:",
 
     ctaEyebrow: "PROJECTE CIUTADÀ EN FASE DE CONSULTA · SABADELL",
-    ctaTitle: "T'INTERESSARIA AQUEST PROJECTE PER A SABADELL?",
-    ctaSubtitle: "Unió Ciutadana (UC) · Esborrany obert al debat veïnal · Sabadell per a qui la treballa.",
-    footerTagline: "Projecte ciutadà en fase de consulta (sense registre jurídic) · Sabadell"
+    ctaTitle: "T'INTERESSARIA AQUEST PARTIT PER A SABADELL?",
+    ctaSubtitle: "Escriu-nos per correu electrònic per dir-nos si t'interessaria aquest projecte, si li donaries suport o si tens alguna proposta més per a la ciutat.",
+    ctaBtn: "Escriure a uniociutadana@proton.me",
+    ctaMailSubject: "Opinió, suport o propostes - Unió Ciutadana Sabadell",
+    footerTagline: "© 2026 Unió Ciutadana (UC) Sabadell · Projecte ciutadà en fase de consulta (sense registre jurídic)"
   },
 
   es: {
@@ -472,8 +474,10 @@ const UC_DATA = {
     contactDesc: "Si formas parte de una entidad vecinal, tienes propuestas concretas para tu barrio o quieres colaborar en esta fase inicial, escríbenos a:",
 
     ctaEyebrow: "PROYECTO CIUDADANO EN FASE DE CONSULTA · SABADELL",
-    ctaTitle: "¿TE INTERESARÍA ESTE PROYECTO PARA SABADELL?",
-    ctaSubtitle: "Unió Ciutadana (UC) · Borrador abierto al debate vecinal · Sabadell para quien la trabaja.",
-    footerTagline: "Proyecto ciudadano en fase de consulta (sin registro jurídico) · Sabadell"
+    ctaTitle: "¿TE INTERESARÍA ESTE PARTIDO PARA SABADELL?",
+    ctaSubtitle: "Escríbenos por correo electrónico para decirnos si te interesaría este proyecto, si lo apoyarías o si tienes alguna propuesta más para la ciudad.",
+    ctaBtn: "Escribir a uniociutadana@proton.me",
+    ctaMailSubject: "Opinión, apoyo o propuestas - Unió Ciutadana Sabadell",
+    footerTagline: "© 2026 Unió Ciutadana (UC) Sabadell · Proyecto ciudadano en fase de consulta (sin registro jurídico)"
   }
 };
