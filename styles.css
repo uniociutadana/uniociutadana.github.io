@@ -946,6 +946,62 @@ a {
   background: var(--red);
 }
 
+.social-block {
+  margin-top: 1.15rem;
+  padding-top: 1.15rem;
+  border-top: 1px solid var(--border);
+}
+
+.social-label {
+  font-family: var(--font-display);
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--ink);
+  margin-bottom: 0.65rem;
+}
+
+.social-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+}
+
+.social-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  padding: 0.55rem 0.9rem;
+  border-radius: 999px;
+  background: var(--bg);
+  border: 1px solid var(--border);
+  font-family: var(--font-display);
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--ink);
+  transition: all 0.2s ease;
+}
+
+.social-pill svg {
+  width: 17px;
+  height: 17px;
+  color: var(--red);
+  transition: color 0.2s ease;
+}
+
+.social-pill:hover {
+  background: var(--red);
+  border-color: var(--red);
+  color: #fff;
+}
+
+.social-pill:hover svg {
+  color: #fff;
+}
+
+.footer-sep {
+  color: #71717a;
+}
+
 .footer-email {
   color: #fda4af;
   font-weight: 600;

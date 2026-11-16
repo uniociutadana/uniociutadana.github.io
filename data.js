@@ -234,6 +234,7 @@ const UC_DATA = {
     contactBadge: "CONTACTE DIRECTE",
     contactTitle: "Escriu-nos per correu electrònic",
     contactDesc: "Si formes part d'una entitat veïnal, tens propostes concretes per al teu barri o vols col·laborar en aquesta fase inicial, escriu-nos a:",
+    socialLabel: "Segueix-nos a les xarxes socials:",
 
     ctaEyebrow: "PROJECTE CIUTADÀ EN FASE DE CONSULTA · SABADELL",
     ctaTitle: "T'INTERESSARIA AQUEST PARTIT PER A SABADELL?",
@@ -478,6 +479,7 @@ const UC_DATA = {
     contactBadge: "CONTACTO DIRECTO",
     contactTitle: "Escríbenos por correo electrónico",
     contactDesc: "Si formas parte de una entidad vecinal, tienes propuestas concretas para tu barrio o quieres colaborar en esta fase inicial, escríbenos a:",
+    socialLabel: "Síguenos en redes sociales:",
 
     ctaEyebrow: "PROYECTO CIUDADANO EN FASE DE CONSULTA · SABADELL",
     ctaTitle: "¿TE INTERESARÍA ESTE PARTIDO PARA SABADELL?",
