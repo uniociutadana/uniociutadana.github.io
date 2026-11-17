@@ -46,6 +46,10 @@
       downloadBtn.href = dict.downloadHref;
       downloadBtn.setAttribute("download", dict.downloadFile);
     }
+    const joinName = document.getElementById("join-name");
+    const joinDistrict = document.getElementById("join-district");
+    if (joinName && dict.joinPlaceholderName) joinName.placeholder = dict.joinPlaceholderName;
+    if (joinDistrict && dict.joinPlaceholderDistrict) joinDistrict.placeholder = dict.joinPlaceholderDistrict;
   }
 
   function renderAxes() {
@@ -273,6 +277,46 @@
     annexContent.hidden = expanded;
     annexToggle.querySelector(".annex-icon").textContent = expanded ? "+" : "−";
   });
+
+  const joinForm = document.getElementById("join-form");
+  if (joinForm) {
+    joinForm.addEventListener("submit", (e) => {
+      e.preventDefault();
+      const dict = UC_DATA[currentLang];
+      const name = (document.getElementById("join-name")?.value || "").trim();
+      const district = (document.getElementById("join-district")?.value || "").trim();
+      const roleSelect = document.getElementById("join-role");
+      const role = roleSelect ? roleSelect.options[roleSelect.selectedIndex].text : "";
+
+      const lines =
+        currentLang === "ca"
+          ? [
+              "Hola equip d'Unió Ciutadana Sabadell,",
+              "",
+              "M'agradaria posar-me en contacte per unir-me o col·laborar amb el projecte:",
+              `- Nom / Àlies: ${name || "(no especificat)"}`,
+              `- Barri / Districte: ${district || "(no especificat)"}`,
+              `- Com puc ajudar: ${role}`,
+              "",
+              "Comentaris addicionals:",
+              ""
+            ]
+          : [
+              "Hola equipo de Unió Ciutadana Sabadell,",
+              "",
+              "Me gustaría ponerme en contacto para unirme o colaborar con el proyecto:",
+              `- Nombre / Alias: ${name || "(no especificado)"}`,
+              `- Barrio / Distrito: ${district || "(no especificado)"}`,
+              `- Cómo puedo ayudar: ${role}`,
+              "",
+              "Comentarios adicionales:",
+              ""
+            ];
+
+      const mailto = `mailto:uniociutadana@proton.me?subject=${encodeURIComponent(dict.joinMailSubject)}&body=${encodeURIComponent(lines.join("\n"))}`;
+      window.location.href = mailto;
+    });
+  }
 
   // Initial render
   setLanguage(currentLang);

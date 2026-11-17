@@ -144,6 +144,17 @@ a {
   color: var(--red);
 }
 
+.nav-join-pill {
+  background: var(--red);
+  color: #fff !important;
+  padding: 0.42rem 0.9rem;
+  border-radius: 999px;
+}
+
+.nav-join-pill:hover {
+  background: var(--red-dark);
+}
+
 .header-actions {
   display: flex;
   align-items: center;
@@ -1002,6 +1013,95 @@ a {
   color: #71717a;
 }
 
+/* Join Section */
+.join-box {
+  display: grid;
+  grid-template-columns: 1.05fr 0.95fr;
+  gap: 2rem;
+  align-items: start;
+}
+
+.join-info h2 {
+  font-size: clamp(1.75rem, 3vw, 2.3rem);
+  font-weight: 800;
+}
+
+.join-points {
+  margin: 0;
+  padding-left: 1.2rem;
+  display: grid;
+  gap: 0.65rem;
+  color: var(--ink);
+  font-size: 0.95rem;
+}
+
+.join-card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-top: 4px solid var(--red);
+  border-radius: var(--radius);
+  padding: 1.85rem;
+  box-shadow: var(--shadow);
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.join-card h3 {
+  font-size: 1.3rem;
+}
+
+.join-field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.join-field label {
+  font-family: var(--font-display);
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--ink);
+}
+
+.join-field input,
+.join-field select {
+  width: 100%;
+  padding: 0.72rem 0.9rem;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  background: var(--bg);
+  color: var(--ink);
+  font-family: var(--font-body);
+  font-size: 0.94rem;
+}
+
+.join-field input:focus,
+.join-field select:focus {
+  outline: 2px solid var(--red);
+  border-color: var(--red);
+}
+
+.join-submit-btn {
+  width: 100%;
+  border: none;
+  cursor: pointer;
+}
+
+.join-direct-note {
+  font-size: 0.86rem;
+  color: var(--muted);
+  text-align: center;
+}
+
+.join-direct-note a {
+  color: var(--red);
+}
+
+.join-direct-note a:hover {
+  text-decoration: underline;
+}
+
 .footer-email {
   color: #fda4af;
   font-weight: 600;
@@ -1139,7 +1239,8 @@ a {
   .prudence-grid,
   .principles-grid,
   .annex-grid,
-  .feedback-grid {
+  .feedback-grid,
+  .join-box {
     grid-template-columns: 1fr;
   }
 
