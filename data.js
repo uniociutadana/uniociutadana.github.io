@@ -219,8 +219,55 @@ const UC_DATA = {
       { k: "Habitatge", v: "Cost mitjà de 190.000 € obra nova i 140.000 € compra; crèdit de 44 M€ a 30 anys al 3,5% (quota ≈2,4 M€); lloguers mitjans de 400 € (≈1,5 M€ nets)." },
       { k: "TUS", v: "Compensació de 2,4 M€ per rebaixa; leasing de 10 busos per 5,5 M€ a 10 anys (3,5%); 3,5 conductors per bus exprés; Bus Nit a 75 €/h; estalvi solar 0,2 M€/any." },
       { k: "Personal", v: "Cost mitjà d'empresa de 46.000 € per operari." },
-      { k: "Congelació IBI (0,8 M€)", v: "Actualització del 2,5% prevista menys creixement natural de bases (≈1%), sobre un IBI residencial d'uns 55 M€." },
+      { k: "Congelació IBI (0,8 M€)", v: "Actualització del 2,5% prevista per 2027 menys creixement natural de bases (≈1%), sobre un IBI residencial d'uns 55 M€." },
       { k: "Neteja viària", v: "El contracte amb SMATSA va ser prorrogat fins a 2030; no es computa cap estalvi en aquesta memòria." }
+    ],
+
+    sourcesTitle: "Fonts oficials i dades dels Excels/CSVs de l'Ajuntament",
+    sourcesIntro: "Per garantir la màxima transparència ciutadana, aquí publiquem l'origen exacte de cada xifra extreta dels portals de transparència de l'Ajuntament de Sabadell (Pressupost 2026, RRHH Setembre/Novembre 2026, Campanyes 2025, Viatges 2025 i Registre Públic de Contractes):",
+    sourcesTables: [
+      {
+        title: "1. D'on surt cada euro dels Recursos (17,2 M€/any)",
+        cols: ["Partida d'ingrés / estalvi", "Import", "Font oficial i càlcul exacte"],
+        rows: [
+          ["1. Austeritat política", "1,0 M€", "RRHH Nov 2026 (12 regidors govern: 700.125 € bruts -> topall 2.000 € nets estalvia ≈0,37 M€) + Eventuals Set 2026 (5 places govern: 287.089 € bruts -> ≈0,25 M€) + Publicitat 2025 (242.480 € -> -75% no obligatòria ≈0,16 M€) + Consultories (167.028 € -> -50% ≈0,08 M€) + contenció partida [912] Òrgans de govern (3,79 M€ -> ≈0,14 M€)."],
+          ["2. Recàrrec IBI pisos buits", "0,8 M€", "Art. 72.4 TRLRHL sobre titulars amb ≥4 immobles desocupats >2 anys (≈1.600 pisos x 500 € IBI mitjà x 100% recàrrec). 0 € a famílies d'1 a 3 pisos."],
+          ["3. IBI diferenciat i IAE", "3,0 M€", "Art. 72.4 TRLRHL: tipus diferenciat exclusivament a immobles no residencials de major valor cadastral i ajustaments de l'IAE."],
+          ["4. Pla d'eficiència corrent", "4,4 M€", "1,45% sobre el Pressupost Municipal 2027 (303,3 M€; base 2026: 290,77 M€) mitjançant revisió de contractes menors, energia i subministraments."],
+          ["5. Reassignació d'inversions", "8,0 M€", "26% dels ≈31 M€ d'inversió previstos al Pressupost 2027 (Capítol 6), prioritzant habitatge, ascensors, autobusos, equipament de brigada i plaques solars."]
+        ]
+      },
+      {
+        title: "2. Pressupost Municipal real de Sabadell 2026 (base del 2027)",
+        cols: ["Codi / Àrea (CSV Pressupost 2026)", "Import 2026", "Relació amb el programa UC"],
+        rows: [
+          ["Total Pressupost Municipal 2026", "290.771.418,52 €", "Base oficial que puja +4,32% el 2027 fins als 303,3 M€."],
+          ["[912] Òrgans de govern", "3.789.660,40 €", "Marc on s'emmarca l'estalvi d'1,0 M€ d'Austeritat política."],
+          ["[152] Habitatge ([1521] Prot. pública: 2,35 M€)", "3.059.704,82 €", "Es reforça amb +6,0 M€/any a VIMUSA (+ crèdit ICO/BEI ≈64 M€)."],
+          ["[163] Neteja viària + [162] Residus", "28.850.605,21 €", "15,51 M€ neteja + 13,34 M€ residus. Es reforça un +8% (+2,35 M€)."],
+          ["[4411] Transport col·lectiu urbà (TUS)", "5.780.934,93 €", "S'amplia amb +4,5 M€/any («Guixeta Mobilitat») per rebaixa i 10 busos."],
+          ["[23] Serveis socials i promoció social", "36.530.918,06 €", "Inclou el nou Escut Social (1,05 M€) i la Nit ÉS Jove (0,45 M€)."]
+        ]
+      },
+      {
+        title: "3. Retribucions oficials i Personal Eventual (RRHH 2026)",
+        cols: ["Document oficial RRHH", "Dades reals auditades", "Impacte en el programa"],
+        rows: [
+          ["Alcaldessa (Ple 22/12/2025 · Nov 2026)", "0 € de l'Ajuntament · 7.295,75 € bruts/mes x 14 de la Diputació (102.140,50 €/any)", "Topall notarial a 2.000 € nets/mes (compromís ètic)."],
+          ["12 Regidors de govern amb sou (Nov 2026)", "4 Tinents (66.449,74 €) + 6 Exclusiva (62.046,60 €) + 2 Parcial 50% (31.023,30 €) = 700.125,16 € bruts/any (≈910.000 € amb SS)", "Topats a 2.000 € nets/mes: estalvi real d'uns ≈0,37 M€/any."],
+          ["Oposició i assistència al Ple (Nov 2026)", "5 Exclusiva (310.233 €) + 9 Assistència Ple (190.627,56 €) = 500.860,56 € bruts/any", "No es computa estalvi unilateral sobre l'oposició."],
+          ["Personal Eventual (Quadre Setembre 2026)", "21 places eventuals: 706.149,92 € bruts (≈932.118 € amb SS) + Síndic (56.043,12 €). De govern/alcaldia: 5 places (287.089 € bruts)", "Reducció de les 5 places de govern al mínim legal: ≈0,25 M€/any."]
+        ]
+      },
+      {
+        title: "4. Publicitat, Viatges 2025 i Contractes (AOC / Registre Públic)",
+        cols: ["Document oficial / CSV", "Dades reals auditades", "Impacte en el programa"],
+        rows: [
+          ["Campanyes Publicitat 2025 (IVA inclòs)", "Ordinàries (154.503,28 €) + ZBE 15% mun. (10.853,12 €) + Nadal (77.123,55 €) = 242.479,95 €", "Retallada del 75% en propaganda no obligatòria: ≈0,16 M€/any."],
+          ["Viatges Equip de Govern (2025)", "Total anual: 4.404,13 € (Madrid, Palma, Atenes, Múrcia, Brussel·les)", "Control d'austeritat; import simbòlic."],
+          ["Registre Públic de Contractes (2023–2025)", "Consultoria/Assistència tècnica: 145.962 € (2023), 155.581 € (2024), 167.028 € (2025)", "Retallada del 50% empoderant tècnics municipals: ≈0,08 M€/any."]
+        ]
+      }
     ],
 
     feedbackEyebrow: "CONSULTA VEÏNAL OBERTA",
@@ -485,8 +532,55 @@ const UC_DATA = {
       { k: "Vivienda", v: "Coste medio de 190.000 € obra nueva y 140.000 € compra; crédito de 44 M€ a 30 años al 3,5% (cuota ≈2,4 M€); alquileres medios de 400 € (≈1,5 M€ netos)." },
       { k: "TUS", v: "Compensación de 2,4 M€ por rebaja; leasing de 10 buses por 5,5 M€ a 10 años (3,5%); 3,5 conductores por bus exprés; Bus Nit a 75 €/h; ahorro solar 0,2 M€/año." },
       { k: "Personal", v: "Coste medio de empresa de 46.000 € por operario." },
-      { k: "Congelación IBI (0,8 M€)", v: "Actualización del 2,5% prevista menos crecimiento natural de bases (≈1%), sobre un IBI residencial de unos 55 M€." },
+      { k: "Congelación IBI (0,8 M€)", v: "Actualización del 2,5% prevista para 2027 menos crecimiento natural de bases (≈1%), sobre un IBI residencial de unos 55 M€." },
       { k: "Limpieza viaria", v: "El contrato con SMATSA fue prorrogado hasta 2030; no se computa ningún ahorro en esta memoria." }
+    ],
+
+    sourcesTitle: "Fuentes oficiales y datos de los Excels/CSVs del Ayuntamiento",
+    sourcesIntro: "Para garantizar la máxima transparencia ciudadana, publicamos aquí el origen exacto de cada cifra extraída de los portales de transparencia del Ayuntamiento de Sabadell (Presupuesto 2026, RRHH Septiembre/Noviembre 2026, Campañas 2025, Viajes 2025 y Registro Público de Contratos):",
+    sourcesTables: [
+      {
+        title: "1. De dónde sale cada euro de los Recursos (17,2 M€/año)",
+        cols: ["Partida de ingreso / ahorro", "Importe", "Fuente oficial y cálculo exacto"],
+        rows: [
+          ["1. Austeridad política", "1,0 M€", "RRHH Nov 2026 (12 concejales gobierno: 700.125 € brutos -> tope 2.000 € netos ahorra ≈0,37 M€) + Eventuales Sep 2026 (5 plazas gobierno: 287.089 € brutos -> ≈0,25 M€) + Publicidad 2025 (242.480 € -> -75% no obligatoria ≈0,16 M€) + Consultorías (167.028 € -> -50% ≈0,08 M€) + contención partida [912] Órganos de gobierno (3,79 M€ -> ≈0,14 M€)."],
+          ["2. Recargo IBI pisos vacíos", "0,8 M€", "Art. 72.4 TRLRHL sobre titulares con ≥4 inmuebles desocupados >2 años (≈1.600 pisos x 500 € IBI medio x 100% recargo). 0 € a familias de 1 a 3 pisos."],
+          ["3. IBI diferenciado e IAE", "3,0 M€", "Art. 72.4 TRLRHL: tipo diferenciado exclusivamente a inmuebles no residenciales de mayor valor catastral y ajustes del IAE."],
+          ["4. Plan de eficiencia corriente", "4,4 M€", "1,45% sobre el Presupuesto Municipal 2027 (303,3 M€; base 2026: 290,77 M€) mediante revisión de contratos menores, energía y suministros."],
+          ["5. Reasignación de inversiones", "8,0 M€", "26% de los ≈31 M€ de inversión previstos en el Presupuesto 2027 (Capítulo 6), priorizando vivienda, ascensores, autobuses, equipamiento de brigada y placas solares."]
+        ]
+      },
+      {
+        title: "2. Presupuesto Municipal real de Sabadell 2026 (base de 2027)",
+        cols: ["Código / Área (CSV Presupuesto 2026)", "Importe 2026", "Relación con el programa UC"],
+        rows: [
+          ["Total Presupuesto Municipal 2026", "290.771.418,52 €", "Base oficial que sube +4,32% en 2027 hasta los 303,3 M€."],
+          ["[912] Órganos de gobierno", "3.789.660,40 €", "Marco donde se encuadra el ahorro de 1,0 M€ de Austeridad política."],
+          ["[152] Vivienda ([1521] Prot. pública: 2,35 M€)", "3.059.704,82 €", "Se refuerza con +6,0 M€/año a VIMUSA (+ crédito ICO/BEI ≈64 M€)."],
+          ["[163] Limpieza viaria + [162] Residuos", "28.850.605,21 €", "15,51 M€ limpieza + 13,34 M€ residuos. Se refuerza un +8% (+2,35 M€)."],
+          ["[4411] Transporte colectivo urbano (TUS)", "5.780.934,93 €", "Se amplía con +4,5 M€/año («Hucha Movilidad») para rebaja y 10 buses."],
+          ["[23] Servicios sociales y promoción social", "36.530.918,06 €", "Incluye el nuevo Escudo Social (1,05 M€) y la Nit ÉS Jove (0,45 M€)."]
+        ]
+      },
+      {
+        title: "3. Retribuciones oficiales y Personal Eventual (RRHH 2026)",
+        cols: ["Documento oficial RRHH", "Datos reales auditados", "Impacto en el programa"],
+        rows: [
+          ["Alcaldesa (Pleno 22/12/2025 · Nov 2026)", "0 € del Ayuntamiento · 7.295,75 € brutos/mes x 14 de la Diputación (102.140,50 €/año)", "Tope notarial a 2.000 € netos/mes (compromiso ético)."],
+          ["12 Concejales de gobierno con sueldo (Nov 2026)", "4 Tenientes (66.449,74 €) + 6 Exclusiva (62.046,60 €) + 2 Parcial 50% (31.023,30 €) = 700.125,16 € brutos/año (≈910.000 € con SS)", "Topados a 2.000 € netos/mes: ahorro real de unos ≈0,37 M€/año."],
+          ["Oposición y asistencia al Pleno (Nov 2026)", "5 Exclusiva (310.233 €) + 9 Asistencia Pleno (190.627,56 €) = 500.860,56 € brutos/año", "No se computa ahorro unilateral sobre la oposición."],
+          ["Personal Eventual (Cuadro Septiembre 2026)", "21 plazas eventuales: 706.149,92 € brutos (≈932.118 € con SS) + Síndic (56.043,12 €). De gobierno/alcaldía: 5 plazas (287.089 € brutos)", "Reducción de las 5 plazas de gobierno al mínimo legal: ≈0,25 M€/año."]
+        ]
+      },
+      {
+        title: "4. Publicidad, Viajes 2025 y Contratos (AOC / Registro Público)",
+        cols: ["Documento oficial / CSV", "Datos reales auditados", "Impacto en el programa"],
+        rows: [
+          ["Campañas Publicidad 2025 (IVA incluido)", "Ordinarias (154.503,28 €) + ZBE 15% mun. (10.853,12 €) + Navidad (77.123,55 €) = 242.479,95 €", "Recorte del 75% en propaganda no obligatoria: ≈0,16 M€/año."],
+          ["Viajes Equipo de Gobierno (2025)", "Total anual: 4.404,13 € (Madrid, Palma, Atenas, Murcia, Bruselas)", "Control de austeridad; importe simbólico."],
+          ["Registro Público de Contratos (2023–2025)", "Consultoría/Asistencia técnica: 145.962 € (2023), 155.581 € (2024), 167.028 € (2025)", "Recorte del 50% empoderando técnicos municipales: ≈0,08 M€/año."]
+        ]
+      }
     ],
 
     feedbackEyebrow: "CONSULTA VECINAL ABIERTA",

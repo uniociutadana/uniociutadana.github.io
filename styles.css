@@ -858,6 +858,44 @@ a {
   color: var(--red);
 }
 
+/* Official Sources Tables */
+.sources-wrapper {
+  margin-top: 2.25rem;
+}
+
+.sources-heading {
+  font-size: 1.35rem;
+  color: var(--ink);
+  margin-bottom: 0.45rem;
+}
+
+.sources-tables {
+  display: grid;
+  gap: 1.25rem;
+}
+
+.source-card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  overflow: hidden;
+  box-shadow: var(--shadow);
+}
+
+.source-card-title {
+  background: var(--ink);
+  color: #fff;
+  padding: 0.85rem 1.25rem;
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.source-card .data-table td:nth-child(2) {
+  font-weight: 700;
+  color: var(--red);
+  white-space: nowrap;
+}
+
 /* Feedback & Contact */
 .feedback-grid {
   display: grid;

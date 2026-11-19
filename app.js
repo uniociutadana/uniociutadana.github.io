@@ -26,6 +26,7 @@
     renderDistricts();
     renderEconomyTables();
     renderAnnex();
+    renderSourcesTables();
     renderTallyAction();
   }
 
@@ -194,6 +195,31 @@
         (item) => `
       <div class="annex-item">
         <strong>${item.k}:</strong> ${item.v}
+      </div>
+    `
+      )
+      .join("");
+  }
+
+  function renderSourcesTables() {
+    const container = document.getElementById("sources-tables");
+    if (!container) return;
+    const tables = UC_DATA[currentLang].sourcesTables || [];
+    container.innerHTML = tables
+      .map(
+        (tbl) => `
+      <div class="source-card">
+        <div class="source-card-title">${tbl.title}</div>
+        <div class="table-wrap">
+          <table class="data-table">
+            <thead>
+              <tr>${tbl.cols.map((c) => `<th>${c}</th>`).join("")}</tr>
+            </thead>
+            <tbody>
+              ${tbl.rows.map((r) => `<tr>${r.map((cell) => `<td>${cell}</td>`).join("")}</tr>`).join("")}
+            </tbody>
+          </table>
+        </div>
       </div>
     `
       )
