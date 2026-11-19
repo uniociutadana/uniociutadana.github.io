@@ -50,8 +50,8 @@ const UC_DATA = {
         id: 1,
         shortTitle: "Ètica política i reconversió tècnica",
         title: "Eix 1. Ètica política, fi de privilegis i reconversió tècnica municipal",
-        budget: "Allibera 2,4 M€/any (9,6 M€ al mandat)",
-        intro: "Gobernar una gran ciutat exigeix màxim rigor tècnic, no destinar prop d'1,8 M€ anuals a personal eventual i Gabinet d'Alcaldia ni malgastar en consultores externes.",
+        budget: "Allibera 1,0 M€/any (4,0 M€ al mandat)",
+        intro: "Governar una gran ciutat exigeix màxim rigor tècnic. Segons les dades oficials de RRHH (2026), l'Ajuntament destina prop d'1,8 M€ anuals entre retribucions de l'equip de govern (~0,9 M€ amb SS) i personal eventual (~0,93 M€ amb SS), dins d'una partida d'Òrgans de govern de 3,79 M€.",
         measures: [
           { title: "Limitació salarial immediata", desc: "Retribucions de l'alcalde i regidors amb dedicació exclusiva topades a 2.000 € nets al mes, signades davant de notari i aprovades al primer Ple." },
           { title: "Personal de confiança al mínim i experts per concurs", desc: "Reducció al mínim legal dels llocs eventuals d'assessoria, propaganda i xarxes. Perfils tècnics (arquitectes, juristes d'habitatge, economistes) per convocatòria pública de mèrits." },
@@ -186,10 +186,10 @@ const UC_DATA = {
     resourcesTitle: "Recursos (Ingressos i Estalvis)",
     investmentTitle: "Inversió Social i Urbana",
     resourcesRows: [
-      { label: "1. Austeritat política: topall salarial, càrrecs de confiança al mínim, -50% consultories i -75% propaganda", val: "2,4 M€" },
+      { label: "1. Austeritat política: topall salarial govern, eventuals al mínim, -50% consultories i -75% propaganda", val: "1,0 M€" },
       { label: "2. Recàrrec progressiu de l'IBI a pisos buits de grans tenidors (0 € a famílies d'1 a 3 pisos)", val: "0,8 M€" },
       { label: "3. IBI diferenciat a immobles no residencials de més valor i ajustaments de l'IAE", val: "3,0 M€" },
-      { label: "4. Pla d'eficiència i revisió de la despesa corrent (≈1% del pressupost)", val: "3,0 M€" },
+      { label: "4. Pla d'eficiència i revisió de la despesa corrent (≈1,45% del pressupost)", val: "4,4 M€" },
       { label: "5. Reassignació d'inversions previstes (≈26% dels 31 M€ d'inversió del pressupost 2027)", val: "8,0 M€" }
     ],
     investmentRows: [
@@ -212,10 +212,10 @@ const UC_DATA = {
     annexIntro: "Totes les xifres d'aquest annex són estimacions de la candidatura. Abans de la presentació definitiva es contrastaran amb la Intervenció municipal, el Portal de Transparència i les entitats afectades.",
     annexItems: [
       { k: "Pressupost", v: "303,3 M€ per a 2027 i uns 31 M€ d'inversió prevista. La reassignació de 8,0 M€ és el 26% d'aquesta inversió." },
-      { k: "Austeritat (2,4 M€)", v: "Parteix que el personal eventual i el Gabinet costen prop d'1,8 M€/any. Cal contrastar aquesta dada i la despesa real en consultories i publicitat." },
+      { k: "Austeritat (1,0 M€)", v: "Dades reals 2025–2026: topall a 12 regidors de govern (≈0,37 M€), reducció de les 5 places eventuals de govern/alcaldia (≈0,25 M€), -75% en publicitat no obligatòria sobre 242.480 € (≈0,16 M€), -50% en consultories sobre ≈167.000 € (≈0,08 M€) i contenció d'altres despeses d'Òrgans de Govern (≈0,14 M€ sobre 3,79 M€)." },
       { k: "Recàrrec IBI (0,8 M€)", v: "Equival a uns 1.600 habitatges desocupats de titulars amb 4 o més immobles, amb IBI mitjà de 500 € i recàrrec mitjà del 100%." },
       { k: "IBI diferenciat i IAE (3,0 M€)", v: "Només s'aplica a immobles no residencials de major valor cadastral, no a empreses com a tals. A validar per Hisenda municipal." },
-      { k: "Eficiència (3,0 M€)", v: "Objectiu de revisió de la despesa corrent (≈1% del pressupost) a concretar amb Intervenció." },
+      { k: "Eficiència (4,4 M€)", v: "Objectiu de revisió de la despesa corrent (≈1,45% sobre els 303,3 M€ del pressupost) en contractes, subministraments i energia, a concretar amb Intervenció." },
       { k: "Habitatge", v: "Cost mitjà de 190.000 € obra nova i 140.000 € compra; crèdit de 44 M€ a 30 anys al 3,5% (quota ≈2,4 M€); lloguers mitjans de 400 € (≈1,5 M€ nets)." },
       { k: "TUS", v: "Compensació de 2,4 M€ per rebaixa; leasing de 10 busos per 5,5 M€ a 10 anys (3,5%); 3,5 conductors per bus exprés; Bus Nit a 75 €/h; estalvi solar 0,2 M€/any." },
       { k: "Personal", v: "Cost mitjà d'empresa de 46.000 € per operari." },
@@ -316,8 +316,8 @@ const UC_DATA = {
         id: 1,
         shortTitle: "Ética política y reconversión técnica",
         title: "Eje 1. Ética política, fin de privilegios y reconversión técnica municipal",
-        budget: "Libera 2,4 M€/año (9,6 M€ en el mandato)",
-        intro: "Gobernar una gran ciudad exige el máximo rigor técnico, no destinar cerca de 1,8 M€ anuales a personal eventual y Gabinete de Alcaldía ni despilfarrar en consultoras externas.",
+        budget: "Libera 1,0 M€/año (4,0 M€ en el mandato)",
+        intro: "Gobernar una gran ciudad exige el máximo rigor técnico. Según los datos oficiales de RRHH (2026), el Ayuntamiento destina cerca de 1,8 M€ anuales entre retribuciones del equipo de gobierno (~0,9 M€ con SS) y personal eventual (~0,93 M€ con SS), dentro de una partida de Órganos de gobierno de 3,79 M€.",
         measures: [
           { title: "Limitación salarial inmediata", desc: "Retribuciones del alcalde y concejales con dedicación exclusiva topadas a 2.000 € netos al mes, firmadas ante notario y aprobadas en el primer Pleno." },
           { title: "Personal de confianza al mínimo y expertos por concurso", desc: "Reducción al mínimo legal de los puestos eventuales de asesoría, propaganda y redes. Perfiles técnicos (arquitectos, juristas de vivienda, economistas) por convocatoria pública de méritos." },
@@ -452,10 +452,10 @@ const UC_DATA = {
     resourcesTitle: "Recursos (Ingresos y Ahorros)",
     investmentTitle: "Inversión Social y Urbana",
     resourcesRows: [
-      { label: "1. Austeridad política: tope salarial, cargos de confianza al mínimo, -50% consultorías y -75% propaganda", val: "2,4 M€" },
+      { label: "1. Austeridad política: tope salarial gobierno, eventuales al mínimo, -50% consultorías y -75% propaganda", val: "1,0 M€" },
       { label: "2. Recargo progresivo del IBI a pisos vacíos de grandes tenedores (0 € a familias de 1 a 3 pisos)", val: "0,8 M€" },
       { label: "3. IBI diferenciado a inmuebles no residenciales de mayor valor y ajustes del IAE", val: "3,0 M€" },
-      { label: "4. Plan de eficiencia y revisión del gasto corriente (≈1% del presupuesto)", val: "3,0 M€" },
+      { label: "4. Plan de eficiencia y revisión del gasto corriente (≈1,45% del presupuesto)", val: "4,4 M€" },
       { label: "5. Reasignación de inversiones previstas (≈26% de los 31 M€ de inversión del presupuesto 2027)", val: "8,0 M€" }
     ],
     investmentRows: [
@@ -478,10 +478,10 @@ const UC_DATA = {
     annexIntro: "Todas las cifras de este anexo son estimaciones de la candidatura. Antes de la presentación definitiva se contrastarán con la Intervención municipal, el Portal de Transparencia y las entidades afectadas.",
     annexItems: [
       { k: "Presupuesto", v: "303,3 M€ para 2027 y unos 31 M€ de inversión prevista. La reasignación de 8,0 M€ es el 26% de esa inversión." },
-      { k: "Austeridad (2,4 M€)", v: "Parte de que el personal eventual y el Gabinete cuestan cerca de 1,8 M€/año. Hay que contrastar este dato y el gasto real en consultorías y publicidad." },
+      { k: "Austeridad (1,0 M€)", v: "Datos reales 2025–2026: tope a 12 concejales de gobierno (≈0,37 M€), reducción de las 5 plazas eventuales de gobierno/alcaldía (≈0,25 M€), -75% en publicidad no obligatoria sobre 242.480 € (≈0,16 M€), -50% en consultorías sobre ≈167.000 € (≈0,08 M€) y contención de otros gastos de Órganos de Gobierno (≈0,14 M€ sobre 3,79 M€)." },
       { k: "Recargo IBI (0,8 M€)", v: "Equivale a unas 1.600 viviendas desocupadas de titulares con 4 o más inmuebles, con IBI medio de 500 € y recargo medio del 100%." },
       { k: "IBI diferenciado e IAE (3,0 M€)", v: "Solo se aplica a inmuebles no residenciales de mayor valor catastral, no a empresas como tales. A validar por Hacienda municipal." },
-      { k: "Eficiencia (3,0 M€)", v: "Objetivo de revisión del gasto corriente (≈1% del presupuesto) a concretar con Intervención." },
+      { k: "Eficiencia (4,4 M€)", v: "Objetivo de revisión del gasto corriente (≈1,45% sobre los 303,3 M€ del presupuesto) en contratos, suministros y energía, a concretar con Intervención." },
       { k: "Vivienda", v: "Coste medio de 190.000 € obra nueva y 140.000 € compra; crédito de 44 M€ a 30 años al 3,5% (cuota ≈2,4 M€); alquileres medios de 400 € (≈1,5 M€ netos)." },
       { k: "TUS", v: "Compensación de 2,4 M€ por rebaja; leasing de 10 buses por 5,5 M€ a 10 años (3,5%); 3,5 conductores por bus exprés; Bus Nit a 75 €/h; ahorro solar 0,2 M€/año." },
       { k: "Personal", v: "Coste medio de empresa de 46.000 € por operario." },
